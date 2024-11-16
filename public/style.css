@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+label{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input{
+    border-radius: 9px;
+    border-color: rgb(0, 0, 0);
+    height: 20px;
+}
+
+button{
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(72, 68, 68);
+    height: 30px;
+}
