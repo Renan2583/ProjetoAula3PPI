@@ -16,8 +16,8 @@ app.get('/', (req, res) => {
 });
 
 // Rota para a página inicial
-app.post('/formulario', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+app.get('/formulario', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'forms.html'));
 });
 
 app.listen(port, () => {
