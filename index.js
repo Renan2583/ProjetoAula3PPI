@@ -1,4 +1,5 @@
 import express from 'express';
+import { link } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -15,10 +16,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Lista para armazenar as empresas
 let listaEmpresa = [];
-
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'menu.html'));
 });
+
 
 // Rota para o formulário
 app.get('/formulario', (req, res) => {
